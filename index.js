@@ -1,5 +1,7 @@
 const button = document.getElementById('menu-btn')
 const navigation = document.getElementById('menu')
+const darktheme = document.getElementById('dark-mode')
+const navbar = document.getElementById("nav-bar")
 
 function navToggle() {
     button.classList.toggle('open');
@@ -9,3 +11,10 @@ function navToggle() {
 }
 button.addEventListener('click', navToggle)
 
+function darkmode () {
+    document.body.classList.toggle('darktheme')
+    navbar.body.classList.toggle('darktheme')
+}
+
+
+darktheme.addEventListener("click", darkmode)

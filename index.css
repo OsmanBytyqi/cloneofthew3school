@@ -11,6 +11,12 @@
   --greycolor: #f1f1f1;
 }
 
+.darktheme {
+  background-color: #1d2a35!important ;
+  color: white;
+  
+}
+
 nav {
   display: flex;
   height: 56px;

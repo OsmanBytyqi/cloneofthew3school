@@ -59,13 +59,15 @@ div.list {
   cursor: pointer;
 }
 
-.list .list-children:hover,i:hover {
+.list .list-children:hover,
+i:hover {
   background-color: #04AA6D;
   color: white;
 }
-.list a:hover{
+
+.list a:hover {
   color: white;
-} 
+}
 
 .list a {
   display: inline-block;
@@ -387,6 +389,7 @@ ul>svg {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
+
 /* mobile-menu sytle */
 
 .mobile-side {
@@ -429,28 +432,61 @@ ul>svg {
   overflow-y: hidden;
 }
 
+.mobile-side .buttons {
+  margin-top: 100px;
+  display: none;
+}
+
+.mobile-side button.login {
+  background-color: #d9EEE1;
+  color: #282A35;
+  padding-left: 35px;
+}
+
+.mobile-side button.signup {
+  background-color: var(--lightgreencolor);
+  color: white;
+  position: relative;
+  left: 35px;
+}
+
+.mobile-side .signup,
+.mobile-side .login {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.mobile-side .login:hover {
+  background-color: var(--greencolor);
+  color: white;
+}
+
+
 /* here  you can find the code needed to create the responsive website*/
 
-@media (max-width:1247px) {
-
+@media (max-width:1300px) {
   .wrapper>a:nth-child(1) {
     display: none;
   }
 }
 
-@media (max-width:1126px) {
+@media (max-width:1165px) {
   .wrapper>a:nth-child(2) {
-    display: none;
-  }
-
-  .list>.list-children:nth-child(1) {
     display: none;
   }
 
   .wrapper {
     margin-left: 0;
-    justify-content: center;
+    justify-content: flex-end;
   }
+}
+
+@media (max-width:1100px) {
+  .list>.list-children:nth-child(1) {
+    display: none;
+  }
+
 }
 
 @media (max-width:1070px) {
@@ -478,21 +514,22 @@ ul>svg {
 
 }
 
-@media(max-width:795px) {
+@media (max-width:1000px) {
+
   .list>.list-children:nth-child(2) {
     display: none;
   }
-
 }
 
-@media(max-width:680px) {
+@media(max-width:755px) {
   .list>.list-children:nth-child(3) {
     display: none;
   }
 
 }
 
-@media(max-width:668px) {
+
+@media(max-width:580px) {
   .list>.list-children:nth-child(4) {
     display: none;
   }
@@ -515,34 +552,29 @@ ul>svg {
 
 @media(max-width:431px) {
   input[type="search"] {
-    width: 60px;
+    width: 160px;
   }
 
+  .wrapper {
+    display: none;
+  }
+
+  .mobile-side .buttons {
+    display: block;
+  }
+
+  header {
+    width: 100px;
+  }
 }
 
 @media(max-width:415px) {
   input[type="search"] {
-    width: 50px;
+    width: 100px;
   }
 
-}
-
-@media(max-width:405px) {
-  input[type="search"] {
-    width: 40px;
+  .wrapper {
+    display: none;
   }
 
-}
-
-@media(max-width:399px) {
-  input[type="search"] {
-    width: 35px;
-  }
-
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
 }

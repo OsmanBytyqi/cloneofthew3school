@@ -9,4 +9,3 @@ function navToggle() {
 }
 button.addEventListener('click', navToggle)
 
-

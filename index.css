@@ -12,9 +12,8 @@
 }
 
 .darktheme {
-  background-color: #1d2a35!important ;
+  background-color: #1d2a35 !important;
   color: white;
-  
 }
 
 nav {
@@ -99,6 +98,8 @@ i:hover {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  border-radius: 25px;
+  padding: 8px 8px;
 }
 
 .input>.dark-mode img {
@@ -106,6 +107,10 @@ i:hover {
   height: auto;
   transform: rotateY(180deg);
   cursor: pointer;
+}
+
+.input>.dark-mode:hover {
+  background-color: #f1f1f1;
 }
 
 form {
@@ -168,7 +173,6 @@ input[type="search"]:focus {
   margin-left: 20px;
 }
 
-/* #F1F1F1 */
 .wrapper svg {
   position: relative;
   right: 2px;
@@ -180,7 +184,6 @@ input[type="search"]:focus {
 }
 
 .wrapper a {
-  margin-right: 25px;
   border-radius: 25px;
   padding: 8px 16px;
 }
@@ -527,21 +530,31 @@ ul>svg {
   }
 }
 
-@media(max-width:590px) {
+@media(max-width:600px) {
   .list>.list-children:nth-child(4) {
     display: none;
   }
 }
 
-@media(max-width:482px) {
+@media(max-width:492px) {
   input[type="search"] {
     width: 100px;
   }
 }
 
-@media(max-width:476px) {
+@media(max-width:475px) {
   input[type="search"] {
-    width: 80px;
+    width: 100px;
+  }
+
+  .input>.dark-mode {
+    margin-left: 10px;
+  }
+
+  .signup,
+  .login {
+    padding: 8px 10px;
+    font-size: 12px;
   }
 }
 
@@ -561,11 +574,15 @@ ul>svg {
   header {
     width: 100px;
   }
+
+  .input>.dark-mode {
+    margin-left: 30px;
+  }
 }
 
 @media(max-width:425px) {
   input[type="search"] {
-    width: 100px;
+    width: 150px;
   }
 
   .wrapper {

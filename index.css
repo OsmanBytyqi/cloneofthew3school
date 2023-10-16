@@ -15,6 +15,10 @@
   --color-primary-50: #c5c4c2;
 }
 
+body{
+  background-color: var(--color-primary-10);
+}
+
 nav {
   display: flex;
   height: 56px;

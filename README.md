@@ -1,1 +1,1 @@
-## The clone of the w3school home page
+## The clone of the w3schools home page
